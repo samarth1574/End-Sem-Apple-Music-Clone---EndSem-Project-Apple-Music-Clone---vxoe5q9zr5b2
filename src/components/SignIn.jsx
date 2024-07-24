@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-const SignIn = ({setButtonText, setButtonPath, setLogin, setToken}) => {
+
+
+const Signin = ({setButtonText, setButtonPath, setLogin, setToken}) => {
 
     const route = useNavigate();
 
@@ -60,7 +62,7 @@ const SignIn = ({setButtonText, setButtonPath, setLogin, setToken}) => {
                     className='w-80 h-14 rounded-2xl m-2.5 bg-[#262628] border-2 border-[#525256] border-solid pl-1'
                     type='email'
                     name='email'
-                    placeholder='Email'
+                    placeholder='Email or Apple ID'
                     value={data.email}
                     onChange={handleChange} />
                 <br />
@@ -82,4 +84,4 @@ const SignIn = ({setButtonText, setButtonPath, setLogin, setToken}) => {
     )
 }
 
-export default SignIn;
+export default Signin;

@@ -64,6 +64,8 @@ const HomePage = ({ setButtonText, setButtonPath }) => {
     };
 
     const fetchSongs3 = async () => {
+    // reserve for the the day 1
+    // now to do at 
         try {
             const response = await fetch('https://academics.newtonschool.co/api/v1/musicx/song?featured= Top 50 of this month', {
                 headers: {
